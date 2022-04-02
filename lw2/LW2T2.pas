@@ -1,0 +1,7 @@
+PROGRAM Lw2T2;
+USES DOS;
+BEGIN
+  WRITELN('Content-Type: text/plain');
+  WRITELN;
+  WRITELN(GETENV('QUERY_STRING')
+END.
