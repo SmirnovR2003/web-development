@@ -68,6 +68,11 @@
     border-radius: 4.59px;
 }
 
+.button
+{
+    cursor: pointer;
+}
+
 .button__text
 {
     width: 167px;
@@ -189,7 +194,7 @@
     width: 337px;
 }
 
-.description-deadline1
+.description-deadline
 {
     display: flex;
     justify-content: space-between;
@@ -199,9 +204,10 @@
     margin-bottom: 71px;
 }
 
-.description-deadline2
+.description-deadline_reverse
 {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     width: 1086px;
@@ -209,7 +215,7 @@
     margin-bottom: 70px;
 }
 
-.description-deadline__info1
+.description-deadline__info
 {
     display: flex;
     flex-direction: column;
@@ -219,7 +225,7 @@
     height: 133px;
 }
 
-.description-deadline__info2
+.description-deadline__info_reverse
 {
     display: flex;
     flex-direction: column;
@@ -389,11 +395,239 @@
     color: #FFFFFF;
 }
 
+.sign-up
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 218px;
+    margin-right: 29px;
+}
+
+.form-window
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 21.58px 27px 21.58px 28px;
+    background: #FFFFFF;
+    border: 1.34888px solid #C0C0C0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 480px;
+    height: 64px;
+    font: normal 500 18px/1.2 'Montserrat';
+    top: -19px;
+    left: 9px;
+    margin-bottom: 2px;
+}
+
+.form__checkbox-text
+{
+    font: normal 400 16px/1.39 'Roboto Condensed';
+    position: relative;
+    top: -3px;
+    left: -20px;
+}
+
+.form__button
+{
+    padding: 21px 40px 22px 41px;
+    background: #000000;
+    border-radius: 5.39px;
+    font: normal 500 18px/1.23 'Montserrat';
+    color: #fff;
+    width: 480px;
+    height: 65px;
+    margin-left: 8px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.form__headline
+{
+    font: normal 500 26px/1.2 'Montserrat';
+    text-align: center;
+    margin: 1px 0 51px;
+}
+
+.form__activity
+{
+    padding: 10px 23px;
+    color: #999;
+}
+
+.form__checkbox 
+{
+	z-index: 10;
+    width: 22px;
+    height: 22px;
+	opacity: 0;
+    cursor: pointer;
+    position: relative;
+    left: 12px;
+    top: -4px;
+}
+
+.form__checkbox + label 
+{
+	position: relative;
+	padding-left: 34px;
+    position: relative;
+    top: -9px;
+    left: -21px;
+}
+
+.form__checkbox + label::before {
+	content: '';
+    width: 22px;
+	height: 22px;
+    background-image: url(../images/Checkbox-off.png);
+
+    border: 1.34888px solid #000000;
+    box-sizing: border-box;
+    border-radius: 4px;
+	position: absolute;
+	top: -2px;
+	left: 4px;	
+}
+
+.form__checkbox:checked + label::before {
+    background-image: url(../images/Checkbox-on.png);
+}
+
+select
+{
+    border-radius: 20px;
+}
+
+.survey-request
+{
+    margin: 52px 59px;
+}
+
+.request-cell
+{
+    padding: 22px 27px 22px 28px;
+    background: #FFFFFF;
+    border: 1.35px solid #C0C0C0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 480px;
+    height: 64px;
+    font: normal 500 18px/1.2 'Montserrat';
+}
+
+.survey-request__button
+{
+    width: 480px;
+    background: #000;
+    border-radius: 5.39px;
+    color: #fff; 
+    margin-left: 49px;
+}
+
+.survey-viewer
+{
+    margin: 68px 59px;
+    font: normal 400 18px/1.35 'Roboto Condensed';
+}
+
+select
+{
+    border-radius: 50%;
+}
+
 .footer
 {
-    margin-top: 408px;
+    margin-top: 198px;
     background: #000000;
-    padding: 39px 857px;
+    padding: 39px;
+}
+
+.footer__logo
+{
+    margin-left: 814px;
+}
+
+.popup
+{
+    visibility: hidden;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    background: rgb(0, 0, 0, 0);
+    z-index: 11;
+    cursor: default;
+}
+
+.main__questionnaire
+{
+    margin-top: 50px;
+    background-color: #fff;
+    width: 640px;
+    height: 847px;
+    position: absolute;
+    z-index: 12;
+    visibility: hidden;
+    left: calc(50vw - 320px);
+    box-shadow: 0px 16px 48px rgba(60, 0, 61, 0.48);
+    border-radius: 12px;
+    transform: scale(0.5, 0.5);
+    filter: blur(10px); 
+}
+
+.questionnaire-content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: -5px;
+    left: -5px;
+}
+
+.questionnaire__close
+{
+    position: absolute;
+    top: 21px;
+    right: 26px;
+    cursor: pointer;
+}
+
+.popup_form-on
+{   
+    filter: blur(0px);
+    transition: .7s;
+    visibility: visible;
+    transform: scale(1, 1);
+}
+
+.popup_form-off
+{
+    transition: .4s;
+    visibility: hidden;
+    filter: blur(10px); 
+    transform: scale(0.5, 0.5);  
+}
+
+.popup_bg-on
+{
+    transition: .7s;
+    visibility: visible;
+    background: rgb(0, 0, 0, 0.6);
+}
+
+.popup_bg-off
+{
+    transition: .7s;
+    visibility: hidden;
+    background: rgb(0, 0, 0, 0);
 }
 
 .logo__pink-color
