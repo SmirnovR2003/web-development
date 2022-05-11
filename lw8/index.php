@@ -5,7 +5,7 @@
     <title>Don`t do it</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Condensed&display=swap" rel="stylesheet">
-    </head>
+</head>
 <body>
     <header class="header">
         <div class="header__logo">
@@ -62,11 +62,11 @@
             </div>
         </div>
     </div>
-    <div class="description-deadline1">
+    <div class="description-deadline">
         <div class="description-deadline__Finances">
             <img src="images/Finances.png" alt="">
         </div>
-        <div class="description-deadline__info1">
+        <div class="description-deadline__info">
             <div class="description-deadline__title">
                 Ты не успеешь
             </div>
@@ -76,17 +76,17 @@
             </div>
         </div>
     </div>
-    <div class="description-deadline2">
-        <div class="description-deadline__info2">
+    <div class="description-deadline_reverse">
+        <div class="description-deadline__Mind-Blowing">
+            <img src="images/Mind Blowing.png" alt="">
+        </div>
+        <div class="description-deadline__info_reverse">
             <div class="description-deadline__title">
                 Опять дедлайн
             </div>
             <div class="description-deadline__text">
                 В мире, где столько всего интересного, когда же успевать жить?
             </div>
-        </div>
-        <div class="description-deadline__Mind-Blowing">
-            <img src="images/Mind Blowing.png" alt="">
         </div>
     </div>
     <div class="you-can">
@@ -142,8 +142,11 @@
             </div>
         </div>
     </div>
+
+    <?php include 'src/Form.php'; ?>
+
     <footer class="footer">
-        <img src="images/Don`t do it.png" alt="">
+        <img class="footer__logo" src="images/Don`t do it.png" alt="">
     </footer>
 </body>
 </html>
