@@ -20,17 +20,15 @@ function calc(expression) {
 		return;
 	}
 
-	expression = expression.replace(/[(,)]/g, ' ');
-
-	expression = expression.replace(/ +/g, ' ').trim().split(' ').reverse();
+	expression = expression.replace(/[(,)]/g, ' ').replace(/ +/g, ' ').trim().split(' ').reverse();
 	let stack = [];
-	let flag = false;
-	for (let i = 0; i < expression.length && !flag; i++) {
+	let isFoundedError = false;
+	for (let i = 0; i < expression.length && !isFoundedError; i++) {
 		if (!isNaN(expression[i]) && isFinite(expression[i])) {
 			stack.push(parseFloat(expression[i]));
 		} else if (!(isOperation(expression[i]))) {
 			console.error(`Met not a number (${expression[i]})`);
-			flag = true;
+			isFoundedError = true;
 			break;
 		}
 		if (isOperation(expression[i])) {
@@ -40,7 +38,7 @@ function calc(expression) {
 					op2 = stack.pop();
 					if (isNaN(op2)) {
 						console.error('Not enough numbers');
-						flag = true;
+						isFoundedError = true;
 						break;
 					}
 					stack.push(op1 + op2);
@@ -50,7 +48,7 @@ function calc(expression) {
 					op2 = stack.pop();
 					if (isNaN(op2)) {
 						console.error('Not enough numbers');
-						flag = true;
+						isFoundedError = true;
 						break;
 					}
 					stack.push(op1 - op2);
@@ -60,7 +58,7 @@ function calc(expression) {
 					op2 = stack.pop();
 					if (isNaN(op2)) {
 						console.error('Not enough numbers');
-						flag = true;
+						isFoundedError = true;
 						break;
 					}
 					stack.push(op1 * op2);
@@ -72,7 +70,7 @@ function calc(expression) {
 						console.error(`You can't divide by zero`);
 					}else if (isNaN(op2)) {
 						console.error('Not enough numbers');
-						flag = true;
+						isFoundedError = true;
 						break;
 					}
 					stack.push(op1 / op2);

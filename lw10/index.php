@@ -2,15 +2,15 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Don`t do it</title>
+    <title>lw10</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Condensed&display=swap" rel="stylesheet">
     <script src="src/popup.js"></script>
 </head>
 <body>
 
-    <div class="popup close-form"><?php include 'src/Form.php'; ?></div>
-	
+    <div class="popup close-form"></div>
+	<?php include 'src/Form.php'; ?>
     <header class="header">
         <div class="header__logo">
             <h1 class="header__logo-text">Don`t <span class="logo__pink-color">do</span> it</h1>
@@ -20,7 +20,7 @@
             <p class="header__text">Вопросы</p>
             <p class="header__text">Автор</p>
         </nav>
-        <button type="button" onClick="popupOn" class="header__button button open-form" >
+        <button type="button" class="header__button button open-form" >
             <p class="button__text">Записаться на курс</p>
         </button>
     </header>
@@ -33,9 +33,9 @@
                 Онлайн-курс для творческих людей, о том, как <br>
                 управлять своим временем 
             </div>
-            <div class="introduction__button button">
+            <button class="introduction__button button">
                 <p class="button__text open-form">Записаться на курс</p>
-            </div>
+            </button>
         </div>
         <div>
             <img class="introduction__image" src="images/blog.png" alt="">
