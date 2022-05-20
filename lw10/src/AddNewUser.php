@@ -9,29 +9,36 @@ $firstName = getPostParameter('first_name');
 $email = getPostParameter('email');
 $activity = getPostParameter('activity');
 $agreement = getPostParameter('agreement');
+$isError = false;
 
 
 if (empty($agreement))
 {
-	echo "Согласитесь с пользовательским соглашением";
-	die();
+	echo "Согласитесь с пользовательским соглашением <br/>";
+	$isError = true;
 }
 
 if ($activity == "Деятельность")
 {
-	echo "Выберите профессию";
-	die();
+	echo "Выберите профессию <br/>";
+	$isError = true;
 }
 
 if (empty($firstName))
 {
-	echo "Введите имя";
-	die();
+	echo "Введите имя <br/>";
+	$isError = true;
 }
+
 if (empty($email))
 {
 	echo "Почта не указана";
-	die();
+	$isError = true;
+}
+
+if ($isError)
+{
+	die;
 }
 
 $file = "../data/" . $email . ".txt";
