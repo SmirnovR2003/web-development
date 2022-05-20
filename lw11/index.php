@@ -2,15 +2,17 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>lw10</title>
+    <title>lw11</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Condensed&display=swap" rel="stylesheet">
     <script defer src="src/popup.js"></script>
+    <script defer src="src/formValidation.js"></script>
 </head>
 <body>
 
     <div class="popup close-form"></div>
     <?php include 'src/Form.php'; ?>
+    
     <header class="header">
         <div class="header__logo">
             <h1 class="header__logo-text">Don`t <span class="logo__pink-color">do</span> it</h1>

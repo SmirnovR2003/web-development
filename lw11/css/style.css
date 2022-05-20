@@ -460,13 +460,16 @@
     top: -4px;
 }
 
+.form__checkbox_border
+{
+    border: 1.34888px solid #ffffff;
+}
+
 .form__checkbox + label 
 {
 	position: relative;
     padding-top: -20px;
 	padding-left: 34px;
-    position: relative;
-    top: -9px;
     left: -21px;
 }
 
@@ -476,7 +479,7 @@
 	height: 22px;
     background-image: url(../images/Checkbox-off.png);
 
-    border: 1.34888px solid #000000;
+    
     box-sizing: border-box;
     border-radius: 4px;
 	position: absolute;
@@ -623,4 +626,38 @@ select
 .logo__pink-color
 {
     color: #e761ba;
+}
+
+.input_error
+{
+    border-color: #ee5858;
+}
+
+.form__error
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 12px;
+    background-color: #fff;
+    visibility: hidden;
+}
+
+.form__error p 
+{
+    font: normal 500 36px/1.2 'Montserrat';
+    margin-top: 302px;
+    margin-left: 72px;
+}
+
+.form__error-on
+{
+    visibility: visible;
+}
+
+.form_hidden
+{
+    visibility: hidden;
 }
