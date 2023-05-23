@@ -7,7 +7,6 @@ button.addEventListener("click", () => {
 
         json = await response.json()
 
-        // формирую html
         const data = document.querySelector('.data');
 
         if (json.length === 0) {

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Don`t do it</title>
-    <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Condensed&display=swap" as="font">
 </head>
 <body>
     <header class="header">
@@ -34,27 +34,27 @@
             </div>
         </div>
         <div>
-            <img class="introduction__image" src="images/blog.png" alt="">
+            <img width='auto' height='auto' class="introduction__image" src="images/blog.webp" alt="">
         </div>
     </div>
     <div class="description-info">
         <div class="description-info__container">
             <div class="description-info__item">
-                <img class="description-info__image" src="images/Time.png" alt="time">
+                <img width='auto' height='auto' class="description-info__image" src="images/Time.webp" alt="time">
                 <p class="description-info__text">
                     Для тех, у кого слишком много<br>           
                     идей и слишком мало времени
                 </p>
             </div>
             <div class="description-info__item">
-                <img class="description-info__image" src="images/notebook.png" alt="notebook">
+                <img width='auto' height='auto' class="description-info__image" src="images/notebook.webp" alt="notebook">
                 <p class="description-info__text">
                     Метод «списка не дел», который 
                     позволит успевать и реализовывать
                 </p>
             </div>
             <div class="description-info__item">
-                <img class="description-info__image" src="images/target.png" alt="target">
+                <img width='auto' height='auto' class="description-info__image" src="images/target.webp" alt="target">
                 <p class="description-info__text">
                     Курс научит творческих людей 
                     сосредотачиваться
@@ -64,7 +64,7 @@
     </div>
     <div class="description-deadline">
         <div class="description-deadline__Finances">
-            <img src="images/Finances.png" alt="">
+            <img width='auto' height='auto' src="images/Finances.webp" alt="">
         </div>
         <div class="description-deadline__info">
             <div class="description-deadline__title">
@@ -78,7 +78,7 @@
     </div>
     <div class="description-deadline_reverse">
         <div class="description-deadline__Mind-Blowing">
-            <img src="images/Mind Blowing.png" alt="">
+            <img width='auto' height='auto' src="images/Mind Blowing.webp" alt="">
         </div>
         <div class="description-deadline__info_reverse">
             <div class="description-deadline__title">
@@ -96,21 +96,21 @@
         <div>
             <div class="you-can__container">
                 <div class="you-can__info">
-                    <img class="you-can__image1" src="images/hand1.png" alt="">
+                    <img width='auto' height='auto' class="you-can__image1" src="images/hand1.webp" alt="">
                     <div class="you-can__text1">
                         Понять, что нужно делать, а что 
                         делать не стоит.
                     </div>
                 </div>
                 <div class="you-can__info">
-                    <img class="you-can__image2" src="images/hand2.png" alt="">
+                    <img width='auto' height='auto' class="you-can__image2" src="images/hand2.webp" alt="">
                     <div class="you-can__text2">
                         Перестать себя искусственно 
                         ограничивать.
                     </div>
                 </div>
                 <div class="you-can__info">
-                    <img class="you-can__image3" src="images/hand3.png" alt="">
+                    <img width='auto' height='auto' class="you-can__image3" src="images/hand3.webp" alt="">
                     <div class="you-can__text3">
                         Определить сильные стороны 
                         и начать использовать слабые.
@@ -119,21 +119,21 @@
             </div>
             <div class="you-can__container">
                 <div class="you-can__info">
-                    <img class="you-can__image4" src="images/hand4.png" alt="">
+                    <img width='auto' height='auto' class="you-can__image4" src="images/hand4.webp" alt="">
                     <div class="you-can__text4">
                         Научиться достигать любой цели 
                         в 3 понятных шага.
                     </div>
                 </div>
                 <div class="you-can__info">
-                    <img class="you-can__image5" src="images/hand5.png" alt="">
+                    <img width='auto' height='auto' class="you-can__image5" src="images/hand5.webp" alt="">
                     <div class="you-can__text5">
                         Сотрудничать эффективно 
                         и с правильными людьми.
                     </div>
                 </div>
                 <div class="you-can__info">
-                    <img class="you-can__image6" src="images/hand6.png" alt="">
+                    <img width='auto' height='auto' class="you-can__image6" src="images/hand6.webp" alt="">
                     <div class="you-can__text6">                   
                         Оптимизировать общение с 
                         клиентами и проведение совещаний.
@@ -146,7 +146,7 @@
     <?php include 'src/Form.php'; ?>
 
     <footer class="footer">
-        <img class="footer__logo" src="images/Don`t do it.png" alt="">
+        <img width='auto' height='auto' class="footer__logo" src="images/Don`t do it.webp" alt="">
     </footer>
 </body>
 </html>

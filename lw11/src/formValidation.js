@@ -18,7 +18,7 @@ popup.addEventListener('submit', (event) => {
         valid = false;
     }       
             
-    if (elementEmail.value.replace(/[^@]/g, '').length != 1 || elementEmail.value.length < 3) {
+    if (elementEmail.value.replace(/[^@]/g, '').length != 1) {
         elementEmail.classList.add('input_error');
         valid = false;
     }
@@ -40,7 +40,8 @@ popup.addEventListener('submit', (event) => {
             const user = {
                 "email": elementEmail.value, 
                 "firstName": elementName.value,
-                "activity": elementActivity.value
+                "activity": elementActivity.value,
+                "agreement": elementAgreement.value
             };
         
    
@@ -56,11 +57,11 @@ popup.addEventListener('submit', (event) => {
             console.log(json);
 
             if ((response.ok) && (json.status == 200)) {
-                popupOff();
+                closePopup();
             } else {
+                elementAgreementArea.classList.add('form__hidden');
                 elementForm.classList.add('form__hidden');
                 elementError.classList.add('form__error-on');
-                elementAgreementArea.classList.add('form__hidden');
             }
         }
     };

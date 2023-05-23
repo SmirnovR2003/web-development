@@ -7,32 +7,45 @@ function getParameter(string $name): ?string
    	return $input[$name] ?? null;
 }
 
-// echo json_encode(['message' => 'файл не открылся', "status" => 500]);
-// return;
-
 $firstName = getParameter('firstName');
 $email = getParameter('email');
 $activity = getParameter('activity');
+$agreement = getParameter('agreement');
+
 
 $file = "../data/" . $email . ".txt";
+try {
+	if (file_exists($file))
+	{
+		$tempArray = file($file);
 
-if (file_exists($file))
+		$tempArray[0] = "First Name: $firstName\n";
+		$tempArray[2] = "Activity: $activity";
+
+		file_put_contents($file, $tempArray);
+	} 
+	else
+	{
+		$userTxt = @fopen($file, "w");
+
+		if ($userTxt) 
+		{
+			throw new Exception();
+		}
+	
+		fwrite($userTxt, "First Name: $firstName\n");
+		fwrite($userTxt, "Email: $email\n");
+		fwrite($userTxt, "Activity: $activity\n");
+		fwrite($userTxt, "Agreement: $agreement");
+		fclose($userTxt);
+		
+	}
+	
+	echo json_encode(['status' => 200]);
+}
+catch (Exception $e)
 {
-	$tempArray = file($file);
-
-	$tempArray[0] = "First Name: $firstName\n";
-	$tempArray[2] = "Activity: $activity";
-
-	file_put_contents($file, $tempArray);
-} 
-else
-{
-	$userTxt = fopen($file, "w");
-	fwrite($userTxt, "First Name: $firstName\n");
-	fwrite($userTxt, "Email: $email\n");
-	fwrite($userTxt, "Activity: $activity");
-	fclose($userTxt);
+	echo json_encode(['message' => 'файл не открылся', "status" => 500]);
 }
 
-echo json_encode(['status' => 200]);
 

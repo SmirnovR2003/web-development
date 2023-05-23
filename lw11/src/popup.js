@@ -6,36 +6,36 @@ const formOnElement = document.querySelectorAll('.open-form'),
 formOnElement.forEach(function(el) 
     {
         el.addEventListener('click', () => {
-            const id = requestAnimationFrame(popupOn);
+            const id = requestAnimationFrame(openPopup);
             cancelAnimationFrame(id);
-            return requestAnimationFrame(popupOn);
+            return requestAnimationFrame(openPopup);
         })
     });
 
 formOffElement.forEach(function(el) 
 {
     el.addEventListener('click', () => {
-        const id = requestAnimationFrame(popupOff);
+        const id = requestAnimationFrame(closePopup);
         cancelAnimationFrame(id);
-        return requestAnimationFrame(popupOff);
+        return requestAnimationFrame(closePopup);
     })
 });
 
 document.onkeydown = 
     function (key) {
         if (key.code == "Escape") {
-            popupOff();
+            closePopup();
         }
     };
 
-function popupOn() {
+function openPopup() {
     form.classList.add('popup_form-on');
     bgform.classList.add('popup_bg-on');
     form.classList.remove('popup_form-off');
     bgform.classList.remove('popup_bg-off');
 }
 
-function popupOff() {
+function closePopup() {
     form.classList.add('popup_form-off');
     bgform.classList.add('popup_bg-off');
     form.classList.remove('popup_form-on');

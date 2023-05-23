@@ -1,6 +1,6 @@
 
 <div class="sign-up">
-    <img src="images/space.png" alt="Астронафт">
+    <img src="images/space.webp" alt="Астронафт">
     <form action="src/AddNewUserPHP.php" method="post">
         <p class="form__headline">Записаться на курс</p>
         <input class="form__name form-window" type="text" placeholder="Ваше имя"  name="first_name"><br>

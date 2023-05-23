@@ -1,0 +1,100 @@
+<svg width="213" height="239" viewBox="0 0 213 239" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<!-- туловище    -->
+    <!-- ноги -->
+    <rect x="46" y="233" width="119" height="6" fill="#29312A"/>
+    <rect x="53" y="209" width="106" height="24" fill="#4D5B57"/>
+
+    <!-- куртка -->
+    <path d="   M30 200
+                C26 189 44 158 54 144
+                H154
+                C164 164 182 206 177 212
+                C170 219 143 228 102 228
+                C61 227 35 214 30 200
+                Z"
+        fill="#D57131"/>
+    <path d="   M106 161
+                V226"
+        stroke="black" stroke-width="3"/>
+    <path d="   M57 180
+                L51 203" 
+        stroke="black" stroke-width="3"/>
+    <path d="   M157 203
+                L151 180" 
+        stroke="black" stroke-width="3"/>
+
+    <!-- левый карман     -->
+    <rect x="72" y="176" width="20" height="25" stroke="black"/>    
+    <path d="   M92 176
+                L82 185"
+        stroke="black"/>
+    <path d="   M72 176
+                L82 185"
+        stroke="black"/>
+
+    <!-- правый карман -->
+    <path d="   M140 176
+                L130 185" 
+        stroke="black"/> -->
+    <rect x="120" y="176" width="20" height="25" stroke="black"/>
+    <path d="   M120 176
+                L130 185" stroke="black"/>
+
+    <!-- кулаки -->
+    <circle cx="40" cy="205" r="13.5" fill="#65C630"/>
+    <circle cx="168" cy="205" r="13.5" fill="#65C630"/>
+    <circle cx="47" cy="202" r="6" fill="#52AA27"/>
+    <circle cx="160" cy="202" r="6" fill="#52AA27"/>
+
+<!-- голова -->
+
+    <!-- воротник -->
+    <ellipse cx="76" cy="155" rx="31" ry="10" transform="rotate(20 75 155)" fill="#62C52D"/>
+    <ellipse rx="31" ry="10" transform="matrix(-1 0.3 0.3 1 137 155)" fill="#62C52D"/>
+
+    <!-- основная часть шапки -->
+    <rect x="28" y="0" width="155" height="85" rx="15" fill="#6ACA31"/>
+
+    <!-- лицо -->
+    <ellipse cx="105" cy="105" rx="75" ry="61" fill="#EBD7B6"/>
+
+    <!-- рот -->
+    <path d="   M93 140
+                C93 140 100 144 103 145
+                C107 145 114 144 114 144" 
+        stroke="black" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- глаза -->
+    <ellipse cx="82" cy="92" rx="22" ry="26" transform="rotate(34 82 92)" fill="#F1F2F1"/>
+    <ellipse cx="130" cy="92" rx="22" ry="26" transform="rotate(-40 130 92)" fill="#F1F2F1"/>
+    <circle cx="93" cy="90" r="2.5" fill="black"/>
+    <circle cx="119" cy="90" r="2.5" fill="black"/>
+
+    <!-- линия меж глаз -->
+    <path d="   M106 94
+                C106 94 105 90 105 87
+                C105 85 106 81 106 81" 
+        stroke="black" />
+
+    <!-- лоб шапки     -->
+    <rect x="39" y="28" width="132" height="39" fill="#3FAB44"/>
+
+    <!-- левое ухо шапки -->
+    <path d="   M40 95
+                C33 115 21 129 13 126
+                C6 124 5 105 13 85
+                C20 65 32 51 40 54
+                C47 56 47 75 40 95
+                Z"
+        fill="#6AC431"/>
+
+    <!-- правое ухо шапки -->
+    <path d="   M199 86.5349
+                C206 106 206 125 198 127
+                C191 130 179 116 171 96
+                C164 76 164 57 172 55
+                C179 52 191 66 199 86
+                Z"
+        fill="#6AC331"/>
+</svg>

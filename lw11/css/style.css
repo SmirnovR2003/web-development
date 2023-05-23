@@ -657,7 +657,7 @@ select
     visibility: visible;
 }
 
-.form_hidden
+.form__hidden
 {
-    visibility: hidden;
+    display: none;
 }
